@@ -18,10 +18,11 @@
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@ant-design/pro-components": "^2.0.1",
+    "@moke/view3d": "^0.0.0",
     "@umijs/max": "^4.0.53",
     "antd": "^5.0.0",
     "lodash": "^4.17.21",
-    "@moke/view3d": "^0.0.0"
+    "view3d": "^0.0.1"
   },
   "devDependencies": {
     "@moke/view3d": "^0.0.0",

@@ -11,7 +11,7 @@ export function View3d() {
                 <pointLight position={[10, 10, 10]} />
                 <mesh>
                     <boxGeometry args={[1, 1, 1]} />
-                    <meshStandardMaterial color={'pink'} />
+                    <meshStandardMaterial color={'orange'} />
                 </mesh>
 
                 <OrbitControls
@@ -24,15 +24,7 @@ export function View3d() {
                     minPolarAngle={0}
                     maxPolarAngle={Math.PI / 2.1}
                 />
-
                 <Grid cellColor="white" position={[0, -0.5, 0]} args={[10, 10]} />
-
-                <GizmoHelper
-                    alignment="bottom-left"
-                    margin={[100, 100]}
-                />
-
-                <Stats />
             </Canvas>
         </Suspense>
     )
