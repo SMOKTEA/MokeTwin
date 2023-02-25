@@ -6,6 +6,7 @@ export default defineConfig({
   model: {},
   initialState: {},
   request: {},
+  mfsu:{},
   layout: {
     title: '@umijs/max',
   },
@@ -20,14 +21,9 @@ export default defineConfig({
       component: './Home',
     },
     {
-      name: '权限演示',
-      path: '/access',
-      component: './Access',
-    },
-    {
-        name: ' CRUD 示例',
-        path: '/table',
-        component: './Table',
+        name: ' 测试Drei',
+        path: '/testDrei',
+        component: './testDrei',
     },
   ],
   npmClient: 'npm',

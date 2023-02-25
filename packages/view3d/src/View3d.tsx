@@ -1,13 +1,39 @@
 import { Canvas } from '@react-three/fiber';
-import React from 'react';
-import { Grid } from '@react-three/drei'
+import React, { Suspense } from 'react';
+import { Vector3 } from 'three';
+import { GizmoHelper, Grid, OrbitControls, Stats } from '@react-three/drei'
 
-export const View3d = () => {
+export function View3d() {
     return(
-        <>
+        <Suspense>
             <Canvas>
-                <Grid position={[0, 0, 0]} cellColor={'#6f6f6f'} cellSize={0.5} />
+                <ambientLight />
+                <pointLight position={[10, 10, 10]} />
+                <mesh>
+                    <boxGeometry args={[1, 1, 1]} />
+                    <meshStandardMaterial color={'pink'} />
+                </mesh>
+
+                <OrbitControls
+                    makeDefault={true}
+                    target={new Vector3(0,0,0)}
+                    zoomSpeed={0.5}
+                    panSpeed={1.5}
+                    enablePan={false}
+                    maxDistance={50}
+                    minPolarAngle={0}
+                    maxPolarAngle={Math.PI / 2.1}
+                />
+
+                <Grid cellColor="white" position={[0, -0.5, 0]} args={[10, 10]} />
+
+                <GizmoHelper
+                    alignment="bottom-left"
+                    margin={[100, 100]}
+                />
+
+                <Stats />
             </Canvas>
-        </>
+        </Suspense>
     )
 }

@@ -1,4 +1,10 @@
 {
+  "name": "app",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/app.js",
   "private": true,
   "author": "liang.han <liang.han@chinaredstar.com>",
   "scripts": {
@@ -14,9 +20,11 @@
     "@ant-design/pro-components": "^2.0.1",
     "@umijs/max": "^4.0.53",
     "antd": "^5.0.0",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "@moke/view3d": "^0.0.0"
   },
   "devDependencies": {
+    "@moke/view3d": "^0.0.0",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "lint-staged": "^13.0.3",
