@@ -1,0 +1,28 @@
+{
+  "name": "view3d",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "liang.han <liang.han@chinaredstar.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/view3d.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmmirror.com/"
+  },
+  "scripts": {
+    "test": "node ./__tests__/view3d.test.js"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.56.27",
+    "@react-three/fiber": "^8.11.5",
+    "lodash": "^4.17.21",
+    "three": "^0.150.0"
+  }
+}
